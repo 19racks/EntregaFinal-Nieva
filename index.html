@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de compras</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>SIMULADOR DE COMPRAS</h1>
+
+    <p id="mensaje"></p>
+
+    <h2>Productos disponibles</h2>
+    <div id="lista-productos"></div>
+
+    <h2>Carrito</h2>
+    <ul id="carrito"></ul>
+    <p id="total">Total: $0</p>
+
+    <button id="vaciar">Vaciar carrito</button>
+    <button id="finalizar">Finalizar compra</button>
+
+    <section id="checkout" style="display: none; margin-top: 20px;">
+        <h2>Finalizar compra</h2>
+
+        <form id="form-checkout">
+            <input 
+                type="text" 
+                id="nombre" 
+                placeholder="Nombre completo"
+                required
+            >
+
+            <input 
+                type="email" 
+                id="email" 
+                placeholder="Email"
+                required
+            >
+
+            <input 
+                type="text" 
+                id="direccion" 
+                placeholder="Dirección"
+                required
+            >
+
+            <button type="submit">Confirmar compra</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* Reset basico */
+* {
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Titulos */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Mensajes */
+#mensaje {
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Productos */
+#lista-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.producto p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Botones generales */
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Botones principales */
+#vaciar {
+    background-color: #b00020;
+}
+
+#vaciar:hover {
+    background-color: #8a0018;
+}
+
+#finalizar {
+    background-color: #0a7d32;
+}
+
+#finalizar:hover {
+    background-color: #065d24;
+}
+
+/* Carrito */
+#carrito {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#carrito li {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Total */
+#total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Acciones */
+#vaciar,
+#finalizar {
+    margin-top: 10px;
+    margin-right: 5px;
+}
